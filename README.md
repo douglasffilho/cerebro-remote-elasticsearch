@@ -25,4 +25,4 @@ cerebro
 
 ### Enjoy
 
-- [cerebro](http://localhost:9000)
+- [local cerebro](http://localhost:9000)

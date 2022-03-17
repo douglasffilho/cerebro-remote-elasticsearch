@@ -11,11 +11,5 @@ local_dir=$(dirname $0)
 cd $local_dir/cerebro/
 docker-compose up -d
 
-echo '\n'
-for i in $(seq 40 -1 0); do
-    echo -n "\rPlease wait for $i s\t"
-    sleep 1s
-done
-
 echo -n "\rAwwwwyeeehh! Now you can use cerebro locally."
 echo ''
