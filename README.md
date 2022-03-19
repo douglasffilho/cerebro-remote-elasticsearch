@@ -6,21 +6,18 @@ Connects Cerebro to a remote elasticsearch cluster with docker-compose
 - Docker Compose
 - Good connection with elasticsearch cluster
 
-# Run:
+# Run (x86_64 arch):
 
-**It will kill all docker containers that has internal port `9000/tcp` then start PROD and QA configured ones here**
+```bash
+docker build --platform linux/amd64 -t lmenezes/cerebro:local .
+docker-compose up -d
+```
 
-You can run:
+# Run (arm64 arch):
+
 ```bash
-sh ./restart.sh
-```
-Or, you can create an alias inside your `~/.bashrc`:
-```bash
-alias cerebro='sh /path/to/restart.sh'
-```
-Now, from terminal, run:
-```bash
-cerebro
+docker build --platform linux/arm64 -t lmenezes/cerebro:local .
+docker-compose up -d
 ```
 
 ### Enjoy

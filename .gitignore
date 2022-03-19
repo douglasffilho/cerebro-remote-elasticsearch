@@ -1,2 +1,3 @@
 cerebro.db
-*.env
+application.conf
+
