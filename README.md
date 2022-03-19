@@ -9,7 +9,7 @@ Connects Cerebro to a remote elasticsearch cluster with docker-compose
 # Run (x86_64 arch):
 
 ```bash
-docker build --platform linux/amd64 -t lmenezes/cerebro:local .
+docker build -t lmenezes/cerebro:local .
 docker-compose up -d
 ```
 
